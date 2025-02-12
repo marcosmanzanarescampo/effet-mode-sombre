@@ -1,0 +1,19 @@
+:root{
+    --background: white;
+    --color: white;
+}
+
+body:has(option[value="dark"]:checked){
+    background-color: black;
+    color: white; 
+}
+
+body:has(option[value="light"]:checked){
+    --background: white;
+    --text-color: black;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--color);
+}
